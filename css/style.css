@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width:70%;
+    margin:auto;
+}
+
+img {
+    max-width: 100%;
+  
+}
+
+.button {
+    background: #94303D;
+    padding:0.5rem 1.5rem; 
+    
+    border:0;
+    
+    color:white;
+    text-decoration: none; 
+    border-radius:6px;
+}
+
+.button:hover {
+    background:#47151c;
+    transition:all 0.5s;
+}
+
+a {
+    color:#94303D;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+.headerWrapper {
+    position: fixed; 
+    width: 100%; 
+
+   
+    transition:all 1s;
+}
+
+.headerWrapper.scrolled { 
+    background:#ffffff22;
+    backdrop-filter: blur(8px);
+}
+
+#mainHeader {
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+
+}
+
+#mainNav ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex;
+
+   
+    column-gap: 1.5rem;
+}
+
+#mainNav a {
+    text-decoration: none; 
+
+}
+
+.logo img {
+    width: 6rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    height:100vh; 
+    background-image: url('../images/hero_white.jpg');
+
+  
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center center;
+
+
+    display: flex; 
+    align-items: center;
+
+}
+
+.cta h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+
+.cta h1 span {
+    font-weight: 300;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SERVIZI                                  */
+/* -------------------------------------------------------------------------- */
+
+section#servizi {
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    
+
+}
+
+.servizio {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    margin-bottom: 2rem;
+
+}
+
+.sImage {
+    width:33.333%;
+}
+
+
+
+.sText {
+    width: 66.666%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 LISTA DRINK                                */
+/* -------------------------------------------------------------------------- */
+
+.drinkList {
+    display: flex;
+    flex-wrap: wrap; 
+  
+    margin-left:-1rem;
+    margin-right: -1rem; 
+
+}
+
+.drink { 
+    width: 33.33%;
+    padding:1rem;
+
+}
+
+.drink img {
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 STILI FORM                                 */
+/* -------------------------------------------------------------------------- */
+
+section#contatti {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #efefef;
+}
+
+textarea#note {
+
+    width:100%;
+    height:10rem;
+
+    resize:none; 
+}
+
+fieldset {
+    border:1px solid #94303D;
+    border-radius:6px;
+}
+
+fieldset#anagrafici {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+   
+
+}
+
+#anagrafici .inputWrapper {
+    width: 33%;
+    margin-bottom: 1.5rem;
+}
+
+fieldset#preferenze {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.scegliDrink, .comeArrivi {
+
+    width: 50%;
+    margin-bottom: 3rem;
+
+}
+
+.messaggio {
+    width: 100%;
+}
+
+button[type='submit'] { 
+margin-top: 2rem;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainFooter {
+    background:#222;
+    color:#cdcdcd;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+
+    text-align: center;
+}
